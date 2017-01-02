@@ -1,0 +1,62 @@
+*{
+	outline:none !important;//元素外围边框
+	-moz-outline: none !important;
+	padding: 0;
+	margin: 0;
+	font-family: Microsoft YaHei, 微软雅黑;
+	font-size: 100%;
+}
+html, body{
+	height: 100%;
+}
+.layout {
+	display: table-cell;
+}
+.sidebar {
+	width: 4rem;
+	height: 100%;
+}
+.sidebar > ul > li .sidebarAStyle{
+	display: inline-block;
+	width: 3.5rem;
+	height: 3.5rem;
+	margin: 0 0.25rem 0 0.25rem;
+	font-size: 2rem;
+	font-weight: 300;
+	color: #28b779;
+	text-align: center;
+	line-height: 3.3rem;
+	vertical-align: middle;
+}
+.sideinfo {
+	width: 15rem;
+	height: 100%;
+	box-shadow: 4px 0px 6px -4px rgba(0,0,0,0.25);
+}
+@media (max-width: 480px) {
+	.sideinfo {
+		display: none;
+	}
+}
+.headerMoreIcon {
+	position: absolute;
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	margin: 0.5rem;
+	top: 0;
+	left: 0;
+	font-size: 1rem;
+	font-weight: 300;
+	color: #fff;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 2rem;
+	background-color: #28b779;
+}
+.content {
+	position: relative;
+	width: auto;
+	height: 100%;
+	border: 1px solid #fff;
+}
