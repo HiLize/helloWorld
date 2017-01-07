@@ -13,14 +13,17 @@ html, body{
 	display: table-cell;
 }
 .sidebar {
-	width: 4rem;
+	position: relative;
+	width: 5%;
 	height: 100%;
+	background-color: #ffffff;
+	z-index: 0;
 }
 .sidebar > ul > li .sidebarAStyle{
 	display: inline-block;
-	width: 3.5rem;
+	width: 100%;
 	height: 3.5rem;
-	margin: 0 0.25rem 0 0.25rem;
+	//margin: 0 0.25rem 0 0.25rem;
 	font-size: 2rem;
 	font-weight: 300;
 	color: #28b779;
@@ -29,9 +32,13 @@ html, body{
 	vertical-align: middle;
 }
 .sideinfo {
-	width: 15rem;
+	position: relative;
+	width: 20%;
 	height: 100%;
+	left: 0;
 	box-shadow: 4px 0px 6px -4px rgba(0,0,0,0.25);
+	transition: all 1s;
+	z-index: -1;
 }
 @media (max-width: 480px) {
 	.sideinfo {
@@ -56,7 +63,13 @@ html, body{
 }
 .content {
 	position: relative;
-	width: auto;
+	width: 75%;
 	height: 100%;
+	left: 0;
 	border: 1px solid #fff;
+	background-color: #f00;
+	transition: all 1s;
+}
+.transform {
+	transition: width 1s;
 }

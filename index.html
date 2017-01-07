@@ -14,22 +14,32 @@
 	<div style="display: table;width: 100%;height: 100%;">
 		<div id="sidebar" class="layout sidebar">
 			<ul style="width: 100%;height: 100%;">
-				<li id="personalIcon">
-					<a href="#" class="sidebarAStyle"><i class="fa fa-user-o"></i></a>
+				<li id="personalIcon" onclick="sidebarClick(this)">
+					<a href="#" class="sidebarAStyle">
+					<i class="fa fa-user-o"></i>
+					</a>
 				</li>
 				<hr style="width: 80%; height: 2px;background-color: #eee;margin: 0 auto;border: 0;" />
-				<li id="recentlyList">
-					<a href="#" class="sidebarAStyle"><i class="fa fa-search"></i></a>
+				<li id="search" onclick="sidebarClick(this)">
+					<a href="#" class="sidebarAStyle">
+					<i class="fa fa-search"></i>
+					</a>
 					<div></div>
 				</li>
-				<li id="personList">
-					<a href="#" class="sidebarAStyle"><i class="fa fa-comment"></i></a>
+				<li id="recentlyList" onclick="sidebarClick(this)">
+					<a href="#" class="sidebarAStyle">
+					<i class="fa fa-comment"></i>
+					</a>
 				</li>
-				<li id="groupList">
-					<a href="#" class="sidebarAStyle"><i class="fa fa-user"></i></a>
+				<li id="percenList" onclick="sidebarClick(this)">
+					<a href="#" class="sidebarAStyle">
+					<i class="fa fa-user"></i>
+					</a>
 				</li>
-				<li id="groupList">
-					<a href="#" class="sidebarAStyle"><i class="fa fa-users"></i></a>
+				<li id="groupList" onclick="sidebarClick(this)">
+					<a href="#" class="sidebarAStyle">
+					<i class="fa fa-users"></i>
+					</a>
 				</li>
 			</ul>
 		</div>
@@ -43,5 +53,6 @@
 			</a>
 		</div>
 	</div>
+	<script type="text/javascript" src="style/js/index.js"></script>
 </body>
 </html>
