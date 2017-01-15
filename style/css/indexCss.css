@@ -26,7 +26,7 @@ html, body{
 	//margin: 0 0.25rem 0 0.25rem;
 	font-size: 2rem;
 	font-weight: 300;
-	color: #28b779;
+	color: #2dc3d3;
 	text-align: center;
 	line-height: 3.3rem;
 	vertical-align: middle;
@@ -59,7 +59,7 @@ html, body{
 	border-radius: 5px;
 	text-align: center;
 	line-height: 2rem;
-	background-color: #28b779;
+	background-color: #2dc3d3;
 }
 .content {
 	position: relative;

@@ -5,6 +5,7 @@
 		
 		if (sideinfo.style.left !== '-20%') {
 			sideinfo.style.left = '-20%'
+			content.style.width = '95%'
 			content.style.left = '-20%'
 		} else {
 			sideinfo.style.left = '0'
