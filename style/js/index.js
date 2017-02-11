@@ -1,4 +1,4 @@
-	function sidebarClick(e) {
+	function sideinfoStyle(e) {
 		var sideinfo = document.getElementById('sideinfo')
 		var content = document.getElementById('content')
 		// console.log(sideinfo.style.left, '平滑过渡收起')
@@ -11,4 +11,7 @@
 			sideinfo.style.left = '0'
 			content.style.left = '0'
 		}
+	}
+	function sidebarClick(e) {
+		console.log(e, 'clicke')
 	}
