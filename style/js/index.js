@@ -13,5 +13,5 @@
 		}
 	}
 	function sidebarClick(e) {
-		console.log(e, 'clicke')
+		console.log(e.id, 'clicke')
 	}
