@@ -13,5 +13,7 @@
 		}
 	}
 	function sidebarClick(e) {
-		console.log(e.target, 'clicke')
+		console.log(e.getElementsByTagName("i")[0].className,'clicke')
+		var sideinfo = document.getElementById('sideinfo')
+		sideinfo.innerText = e.id
 	}
