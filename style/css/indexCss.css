@@ -5,6 +5,7 @@
 	margin: 0;
 	font-family: Microsoft YaHei, 微软雅黑;
 	font-size: 100%;
+	list-style: none;
 }
 html, body{
 	height: 100%;
@@ -16,15 +17,18 @@ html, body{
 	position: relative;
 	width: 5%;
 	height: 100%;
+	margin: 0;
+	padding: 0;
 	background-color: #ffffff;
 	z-index: 0;
 }
 .sidebar > ul > li .sidebarAStyle{
+	position: relative;
 	display: inline-block;
 	width: 100%;
 	height: 3.5rem;
 	//margin: 0 0.25rem 0 0.25rem;
-	font-size: 2rem;
+	font-size: 1.25rem;
 	font-weight: 300;
 	color: #2dc3d3;
 	text-align: center;
@@ -32,28 +36,22 @@ html, body{
 	vertical-align: middle;
 }
 .sideinfo {
-	position: relative;
+	position: absolute;
 	width: 20%;
 	height: 100%;
-	left: 0;
-	box-shadow: 4px 0px 6px -4px rgba(0,0,0,0.25);
-	transition: all 1s;
+	left: 5%;
+	top: 0;
 	z-index: -1;
-}
-@media (max-width: 480px) {
-	.sideinfo {
-		display: none;
-	}
 }
 .headerMoreIcon {
 	position: absolute;
-	display: inline-block;
+	display: none;
 	width: 2rem;
 	height: 2rem;
 	margin: 0.5rem;
 	top: 0;
 	left: 0;
-	font-size: 1rem;
+	font-size: 0.725rem;
 	font-weight: 300;
 	color: #fff;
 	border-radius: 5px;
@@ -65,11 +63,24 @@ html, body{
 	position: relative;
 	width: 75%;
 	height: 100%;
-	left: 0;
-	border: 1px solid #fff;
-	background-color: #f00;
-	transition: all 1s;
+	background-color: #ffffff;
 }
-.transform {
-	transition: width 1s;
+.contentTital {
+	position: relative;
+	width: 100%;
+	height: 3rem;
+	line-height: 3rem;
+	background-color: #2dc3d3;
+}
+.contentTital > span {
+	width: 4rem;
+	height: 2rem;
+}
+@media (max-width: 480px) {
+	.sideinfo,.sidebar{
+		display: none;
+	}
+	.headerMoreIcon {
+		display: inline-block;
+	}
 }

@@ -1,16 +1,19 @@
+	var isTrue = true
 	function sideinfoStyle(e) {
 		var sideinfo = document.getElementById('sideinfo')
 		var content = document.getElementById('content')
-		// console.log(sideinfo.style.left, '平滑过渡收起')
 		
-		if (sideinfo.style.left !== '-20%') {
-			sideinfo.style.left = '-20%'
+		if (isTrue) {
+			sideinfo.style.transform = 'translate3D(-20%, 0px, 0px)'
 			content.style.width = '95%'
-			content.style.left = '-20%'
+			isTrue=false
 		} else {
-			sideinfo.style.left = '0'
-			content.style.left = '0'
+			sideinfo.style.transform = 'translate3D(0px, 0px, 0px)'
+			content.style.width = '75%'
+			isTrue=true
 		}
+		sideinfo.style.transition = 'all 1s'
+		content.style.transition = 'all 1s'
 	}
 	function sidebarClick(e) {
 		console.log(e.getElementsByTagName("i")[0].className,'clicke')
