@@ -14,13 +14,14 @@ html, body{
 	display: table-cell;
 }
 .sidebar {
-	position: relative;
+	position: absolute;
 	width: 5%;
 	height: 100%;
 	margin: 0;
 	padding: 0;
 	background-color: #ffffff;
-	z-index: 0;
+	z-index: 1;
+	box-shadow: none;
 }
 .sidebar > ul > li .sidebarAStyle{
 	position: relative;
@@ -41,7 +42,8 @@ html, body{
 	height: 100%;
 	left: 5%;
 	top: 0;
-	z-index: -1;
+	z-index: 0;
+	box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
 }
 .headerMoreIcon {
 	position: absolute;
@@ -61,19 +63,24 @@ html, body{
 }
 .content {
 	position: relative;
+	z-index: -1;
 	width: 75%;
 	height: 100%;
 	background-color: #ffffff;
 }
 .contentTital {
 	position: relative;
+	box-sizing: border-box;
+	padding: 0 1rem;
 	width: 100%;
 	height: 3rem;
 	line-height: 3rem;
 	background-color: #2dc3d3;
+	color: #ffffff;
 }
 .contentTital > span {
-	width: 4rem;
+	position: absolute;
+	min-width: 4rem;
 	height: 2rem;
 }
 @media (max-width: 480px) {
