@@ -31,18 +31,21 @@ html, body{
 	//margin: 0 0.25rem 0 0.25rem;
 	font-size: 1.25rem;
 	font-weight: 300;
-	color: #2dc3d3;
+	color: #57d2f7;
 	text-align: center;
 	line-height: 3.3rem;
 	vertical-align: middle;
 }
 .sideinfo {
 	position: absolute;
-	width: 20%;
+	width: 18%;
 	height: 100%;
 	left: 5%;
 	top: 0;
+	padding-top: 0.5rem;
 	z-index: 0;
+	text-align: center;
+	font-size: 0;
 	box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
 }
 .headerMoreIcon {
@@ -59,12 +62,12 @@ html, body{
 	border-radius: 5px;
 	text-align: center;
 	line-height: 2rem;
-	background-color: #2dc3d3;
+	background-color: #57d2f7;
 }
 .content {
 	position: relative;
 	z-index: -1;
-	width: 75%;
+	width: 77%;
 	height: 100%;
 	background-color: #ffffff;
 }
@@ -75,13 +78,32 @@ html, body{
 	width: 100%;
 	height: 3rem;
 	line-height: 3rem;
-	background-color: #2dc3d3;
+	background-color: #57d2f7;
 	color: #ffffff;
 }
 .contentTital > span {
 	position: absolute;
 	min-width: 4rem;
 	height: 2rem;
+}
+
+.inputStyle {
+	width: 80%;
+	height: 2rem;
+	border-radius: 5px;
+	border: 1px solid #726dd1;
+	font-size: 0.875rem;
+}
+.buttonStyle {
+	width: 19%;
+	height: 2rem;
+	line-height: 2rem;
+	border: none;
+	border-radius: 5px;
+	background-color: #726dd1;
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 1rem;
 }
 @media (max-width: 480px) {
 	.sideinfo,.sidebar{
